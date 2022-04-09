@@ -1,0 +1,229 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;    
+    font-family: 'Flamenco', cursive;
+    background-color: #111;
+}
+
+header{
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(bg/log.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+div.logo{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+    display: flex;
+    float: left;
+
+}
+
+.navbar{
+    height: 90px;
+    width: 100%;
+    background: #111;
+    color: white;
+}
+.navbar-nav{
+    margin-top: 15px;
+}
+
+.navbar-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.nav-item a{
+   padding: 13px 17px;
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 90%;
+   font-weight: 100;
+}
+
+.nav-item a:hover{
+    border-bottom: 3px solid #ff226d;
+    box-shadow: 5px 10px 30px rgba(245, 40, 145, 0.8);
+}
+
+
+#log-btn{
+    border: 2px solid #ff226d;
+    border-radius: 200px;
+    color: #ff226d;
+    padding: 7px 20px;
+    font-weight: 600px;
+    cursor: pointer;
+    
+
+}
+
+
+
+/* sign up */
+
+
+h1{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    margin-top: 3%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+
+}
+::placeholder{
+    color: white;
+    font-weight: 300px;
+}
+
+
+input{
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid purple;
+    background: #34495E;
+    padding: 12px;
+    font-size: 18px;
+    color: #ff22d6;
+    margin-top: 15px;
+    
+}
+#submit-btn{
+    padding: 7px 10px;
+    float: right;
+    font-size: 16px;
+    height: 50px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    width: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+#submit-btn:hover{
+    background: purple;
+    transition: all 0.3s ease;
+    color: white;
+    font-weight: 500px;
+    border: 2px solid purple;
+}
+
+a{
+    color: yellow;
+    text-decoration: blink;
+    font-size: 25px;
+
+}
+a:hover{
+    color: skyblue;
+}
+#back-btn{
+    padding: 5px 10px;
+    font-size: 16px;
+    height: 42px;
+    background: none;
+    color: violet;
+    border: 2px solid violet;
+    width: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+#back-btn:hover{
+    background: #ff22d6;
+    transition: all 0.3s ease;
+    color: white;
+    font-weight: 500px;
+    border: 2px solid #ff22d6;
+}
+
+/* footer */
+
+
+footer{
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #512E5F;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+h4{
+    padding: 0 1000;
+    line-height: 80px;
+    color: #fff;
+    font-size: 35px;
+}
+
+.footer-section{
+
+text-align: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.para{
+    color: #fff;
+    margin: 10px auto;
+    max-width: 500px;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.footer-bottom{
+    width: 100%;
+    color: darkgray;
+    background: #4A235A ;
+    padding: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer-bottom .cc{
+    font-size: 22px;
+    word-spacing: 2px;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Decoration And Event Organizer</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-#111 fixed-top">
+                <div class="container">
+                    <div class="logo"><span style="color: #ff226d;">Interior</span>X</div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto text-primary" data-aos="fade-left">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#service-page">SERVICE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#about-us">ABOUT US</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="more.html">CATEGORY</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#contact-us">CONTACT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" id="log-btn" aria-current="page" href="login.html">LOG IN</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+
+            <div class="main-content-header">
+            <h1 data-aos="fade-right">WELCOME TO <span class="colorchange">Decoration And Event Organize</span><br>
+                Make Your House More Gorgeous</h1>
+            <a href="login.html" class="btn btn-full">click to reserve</a>
+            <a href="show.html" class="btn btn-nav">show me more</a>    
+            </div>        
+        </header>
+
+        <!-- Our service -->
+<section id="service-page">
+    <br><br><br>
+    
+        <div class="service">
+            <h4>OUR SERVICES</h4>
+        </div>
+
+        <div class="service-item">
+
+    
+        <div class="container">
+                
+            <div class="box" data-aos="fade-right">
+                <h2>01</h2>
+                <h3>Commercial Design</h3>
+                <p>
+                    For exceptional office furniture from the best manufacturers in the industry, turn to Commercial Design Services. 
+                </p>
+            </div>
+            <div class="box" data-aos="fade-down">
+                <h2>02</h2>
+                <h3>Office Design</h3>
+                    <p>
+                        Design and furnish their interior office spaces, and we are well equipped to outfit a wide array of corporate environments, including traditional office spaces, educational institutions, government buildings, medical facilities, and startup companies.
+                    </p>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <h2>03</h2>
+                <h3>Residential Design</h3>
+                    <p>
+                        Our team has accredited design professionals qualified to guide your buyer through the personalization of their production home. Making options management a seamless endeavor by using our proprietary systems and experienced support staff.
+                    </p>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <h2>04</h2>
+                <h3>Event Organize</h3>
+                    <p>
+                        We deliver quality results for all your meetings, public and corporate events.
+                    </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-us">
+    <br><br>
+    <div class="about-section">
+        <div class="cont">
+            <img class="photo" src="bg/aboutS.jpg" alt="">
+        </div>
+        <div class="about-info" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+        <h2>About Us</h2>
+        <h3>Hello! <span style="color: violet;">We are dedicated to build something aesthetic.</span></h3>
+        <p class="about-text">We are creative for design and decoration. We can make sure you the best design for your home, office and workplace. 
+            We try to make your place more comfortable and aesthetic.</p>
+            <a href="more.html" class="show-design">OUR GALLERY</a>
+    
+    </div>
+</div>
+</section>
+
+<section id="contact-us">
+    <br>
+    <div class="contact-section" data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500">
+        <div class="contact-info">
+            <div><i class="fas fa-map-marker-alt"></i>#69 Munshipara Road, Tongi, BD</div>
+            <div><i class="fas fa-envelope"></i>sayed15-2537@diu.edu.bd</div>
+            <div><i class="fas fa-phone"></i>+8801712988806, +08801884468766</div>
+            <div><i class="fas fa-clock"></i>Sat - Thu 9.00 AM to 8.00 PM</div>
+        </div>
+        <div class="contact-form">
+            <h1>Contact</h1>
+            <form class="contact" action="" autocomplete="off" onsubmit="return valid()">
+               
+                            <input type="text" name="name" id="name" class="text-box" placeholder="Your Name">
+                            <br><span id="name_err"></span>
+                        
+                            <input type="text" name="email" id="email" class="text-box" placeholder="Your Email">                            
+                            <br><span id="email_err"></span>
+                       
+                            <textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea>
+                            <br><span id="message_err"></span>
+                
+                
+                <input type="submit" name="submit" class="send-btn" value="send">
+            </form>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    function valid(){
+        var nm = document.getElementById('name').value;
+        var em = document.getElementById('email').value;
+        var msg = document.getElementById('message').value;
+
+
+        if(nm == ""){
+    document.getElementById('name_err').innerHTML="**Please write Name in the box**";
+return false;
+}
+    else if(nm.length<2){
+    document.getElementById('name_err').innerHTML="**Please write atleast 2 character in the box**";
+    return false;
+
+    }
+    else if(!isNaN(nm)){
+    document.getElementById('name_err').innerHTML="**Please type Alphabet only in the box**";
+    return false;
+
+    }else{
+    document.getElementById('name_err').innerHTML="";
+    }
+
+
+    if(em == ""){
+    document.getElementById('email_err').innerHTML="**Please write the Email in the box**";
+    return false;
+}
+else if(em.indexOf('@')<=0){
+    document.getElementById('email_err').innerHTML="**invalid position of @**";
+    return false;
+}
+else if(em.charAt(em.length-4)!='.'){
+    document.getElementById('email_err').innerHTML="**invalid position of .**";
+    return false;
+}
+else{
+    document.getElementById('email_err').innerHTML="";
+}
+
+if(msg == ""){
+    document.getElementById('message_err').innerHTML="**Please write the message in the box**";
+return false;
+}
+    else if(msg.length<6){
+    document.getElementById('message_err').innerHTML="**Please write some text in the box**";
+    return false;
+
+    }
+    else if(!isNaN(msg)){
+    document.getElementById('message_err').innerHTML="**Please add some text with number**";
+    return false;
+
+    }else{
+    document.getElementById('message_err').innerHTML="";
+    alert("Thanks! Your message has been sent Successfully.");
+    }
+
+
+
+}
+
+</script>
+
+<footer>
+    <div class="footer-section">
+        <h4><span style="color: #ff226d;">Interior</span>X</h4>
+        <div class="para"><p>Follow us</p></div>
+        <div class="icon">
+            <a href="https://twitter.com/KaribFarhan"><img src="icon/tw.svg" alt=""></a>
+            <a href="https://www.facebook.com/farhan.karib.33"><img src="icon/face.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/farhan-labib-b2b0aa192"><img src="icon/lin.svg" alt=""></a>
+            
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="cc">© 2022. All rights reserved | Design By <span style="color: yellowgreen;">FarhanLabib</span></p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="login.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-#111 fixed-top">
+                <div class="container">
+                    <div class="logo"><span style="color: #ff226d;">Interior</span>X</div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto text-primary" data-aos="fade-left">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="main.html">SERVICE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="main.html">ABOUT US</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="more.html">CATEGORY</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="main.html">CONTACT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="log-btn" aria-current="page">LOG IN</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+                <br><br><br>
+                <h1>Sign Up</h1>
+                <form action="#" autocomplete="off" onsubmit="return valid()" data-aos="fade-up">
+        
+                    <table>
+                        
+                        <tr><td><input type="text" id="fname" placeholder="First Name">
+                        <br><span id="fname_err"></span>
+                        </td></tr>
+                        <tr><td><input type="text" id="lname" placeholder="Last Name">
+                          <br>  <span id="lname_err"></span>
+                        </td></tr>
+                        <tr><td><input type="text" id="email" placeholder="Email">
+                            <br><span id="email_err"></span>
+                        </td></tr>
+              
+            
+                        <tr><td><input type="password" id="create" placeholder="Create a Password">
+                            <br><span id="create_err"></span>
+                        </td></tr>
+                        
+                        <tr><td><input type="password" id="confirm" placeholder="Confirm Password">
+                            <br><span id="confirm_err"></span>
+                        </td></tr>
+                        
+                        <tr><td><input type="submit" id="submit-btn" placeholder="SIGN UP" value="SIGN UP"></td></tr>
+                        <tr><td><center>Already have account?<a href="login.html" color: yellow;">&nbsp;Log in</a></center></td></tr>
+                        <tr><td><a href="main.html"><input type="button" id="back-btn" placeholder="LOG IN" value="Go back to the Home"></a></td></tr>
+                        
+                        
+            
+            
+                    </table>
+                </form>
+
+
+                 
+        </header>
+
+        <footer>
+            <div class="footer-section">
+                <h4><span style="color: #ff226d;">Interior</span>X</h4>
+                <div class="para"><p>Follow us</p></div>
+                <div class="icon">
+                    <a href="https://twitter.com/KaribFarhan"><img src="icon/tw.svg" alt=""></a>
+                    <a href="https://www.facebook.com/farhan.karib.33"><img src="icon/face.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/farhan-labib-b2b0aa192"><img src="icon/lin.svg" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="cc">© 2022. All rights reserved | Design By <span style="color: yellowgreen;">FarhanLabib</span></p>
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+            function valid(){
+                var fn = document.getElementById('fname').value;
+                var ln = document.getElementById('lname').value;
+                var em = document.getElementById('email').value;
+                var pass = document.getElementById('create').value;
+                var con = document.getElementById('confirm').value;
+    
+               
+    
+    
+        if(fn == ""){
+            document.getElementById('fname_err').innerHTML="**Please write First Name in the box**";
+        return false;
+        }
+            else if(fn.length<2){
+            document.getElementById('fname_err').innerHTML="**Please write atleast 2 character in the box**";
+            return false;
+    
+            }
+            else if(!isNaN(fn)){
+            document.getElementById('fname_err').innerHTML="**Please type Alphabet only in the box**";
+            return false;
+    
+            }else{
+            document.getElementById('fname_err').innerHTML="";
+            }
+    
+    
+    
+        if(ln == ""){
+            document.getElementById('lname_err').innerHTML="**Please write Last Name in the box**";
+            return false;
+        }
+        else  if(ln.length<2){
+            document.getElementById('lname_err').innerHTML="**Please write atleast 2 character in the box**";
+            return false;
+    
+        }
+        else if(!isNaN(ln)){
+            document.getElementById('lname_err').innerHTML="**Please type Alphabet only in the box**";
+            return false;
+    
+        }else{
+            document.getElementById('lname_err').innerHTML="";
+        }
+    
+
+    
+        if(em == ""){
+            document.getElementById('email_err').innerHTML="**Please write the Email in the box**";
+            return false;
+        }
+        else if(em.indexOf('@')<=0){
+            document.getElementById('email_err').innerHTML="**invalid position of @**";
+            return false;
+        }
+        else if(em.charAt(em.length-4)!='.'){
+            document.getElementById('email_err').innerHTML="**invalid position of .**";
+            return false;
+        }
+        else{
+            document.getElementById('email_err').innerHTML="";
+        }
+    
+    
+    
+    
+   
+    
+        if(pass == ""){
+            document.getElementById('create_err').innerHTML="**Please write a password in the box**";
+            return false;
+        }
+        else if(pass.length<8){
+            document.getElementById('create_err').innerHTML="**Please type minimum 8 character password in the box**";
+            return false;
+    
+        }
+        else{
+            document.getElementById('create_err').innerHTML="";
+        }
+    
+    
+        if(con != pass){
+            document.getElementById('confirm_err').innerHTML="**Password not matched**";
+            return false;
+        }
+         
+        else{
+            document.getElementById('confirm_err').innerHTML="";
+            alert("Congratulations! You have been created account Successfully");
+        }
+    
+    }
+    </script>
+
+
+        
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    </body>
+</html>
